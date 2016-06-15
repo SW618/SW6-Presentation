@@ -1,4 +1,93 @@
-\section{Troels' Slides}
-    \begin{frame}[t]{Troels' Slides}\framesubtitle{Troels' Slides}
-        Test Text
-    \end{frame}
+\section{Development}
+    \subsection{REST API}
+        \begin{frame}[t]{Developing the REST API}\framesubtitle{Overview}
+            Will this be needed?
+            Maybe the model--layer?
+            1 person for 4 sprints + ~4 people for 2 sprints:
+            12 man--sprints.
+
+            Focus on the next generation of GIRAF developers. 
+        \end{frame}
+
+        \begin{frame}[t]{Developing the REST API}\framesubtitle{Our contributions}
+            Sprints 3-4:
+            \begin{itemize}
+                \item Pictograms
+                \item Sequence
+                \item Week Schedule
+            \end{itemize}
+            \bigskip
+            \uncover<2->{
+            Differences from developing APPs.
+            \begin{itemize}
+                \item Unit Tests (With a code--coverage above 0~\%)
+                \item Linting
+                \uncover<3->{
+                    \begin{itemize}
+                        \item Saved time during code--review
+                        \item Enforced a code--style
+                    \end{itemize}
+                }
+                \item Strict(er) code--review
+            \end{itemize}
+            }
+        \end{frame}
+
+        \begin{frame}[t]{Demo of the REST API}\framesubtitle{Pictograms and Sequences}
+            The demo will show:
+            \begin{itemize}
+                \item Pictograms
+                \begin{itemize}
+                    \item being uploaded.
+                    \item being viewed.
+                \end{itemize}
+                \uncover<2->{
+                \item Sequences
+                \begin{itemize}
+                    \item being created.
+                    \item being viewed.
+                    \item being edited.
+                \end{itemize}
+                }
+            \end{itemize}
+        \end{frame}
+
+    \subsection{GIRAF--APPS}
+        \subsubsection{Gradle}
+            \begin{frame}[t]{GIRAF--APPs}\framesubtitle{The Gradle Build System}
+                \begin{itemize}
+                    \item Fixing the initial broken library builds.
+                    \item Assisting with Jenkins.
+                    \item Helping various groups with small issues.
+                \end{itemize}
+            \end{frame}
+
+        \subsubsection{PictoSearch}
+            \begin{frame}[t]{GIRAF--APPs}\framesubtitle{PictoSearch}
+                \begin{itemize}
+                    \item Improving the initial view.
+                    \item ``real--time'' search.
+                \end{itemize}
+                \bigskip
+                \begin{columns}[c]
+                    \column{0.5\textwidth}
+                        Before screenshot
+                    \column{0.5\textwidth}
+                        After screenshot (Animation?)
+                \end{columns}
+            \end{frame}
+
+        \subsubsection{WeekSchedule}
+            \begin{frame}[t]{GIRAF--APPs}\framesubtitle{WeekSchedule}
+                \begin{itemize}
+                    \item Added border to each frame.
+                    \item Made the entire area scrollable.
+                \end{itemize}
+                \bigskip
+                \begin{columns}[c]
+                    \column{0.5\textwidth}
+                        Before screenshot
+                    \column{0.5\textwidth}
+                        After screenshot (Animation?)
+                \end{columns}
+            \end{frame}
