@@ -1,76 +1,87 @@
-\section{Project Management \& Development Tools}
-    \subsection{Obstacles in the development process}
-    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{Tasks we need to solve}
+\section{Tools for Project Management \& Development}
+\subsection{Obstacles}
+\begin{frame}[t]{Tools for Project Management \& Development}
+    \begin{itemize}
+        \item Version Control
+        \item Code Review
+        \item Wiki
+        \item Documentation
+        \item Continuous Integration
+        \item Artifact Repository
+    \end{itemize}
+\end{frame}
+\subsection{Tools}
+\begin{frame}[t]{Tools for Project Management \& Development}\framesubtitle{Version Control}
+    \begin{itemize}
+        \item Git
         \begin{itemize}
-        	\item Version Control
-        	\item Code Review
-        	\item Wiki
-        	\item Documentation
-        	\item Continuous Integration
-        	\item Artifact Repository
+            \item Foundation of the workflow
+            \item Gogs
+            \item Powerful
+            \item Easy to make mistakes
         \end{itemize}
-    \end{frame}
-    \subsection{Tools}
-    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{Version Control}
-        \begin{itemize}
-            \item Git
-        	\begin{itemize}
-        		\item Foundation of workflow
-                \item Powerfull
-                \item Easy to make mistakes
-        	\end{itemize}
-        \end{itemize}
-    \end{frame}
+    \end{itemize}
+\end{frame}
 
-    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{Code Review, Wiki}
+\begin{frame}[t]{Tools for Project Management \& Development}\framesubtitle{Code Review, Wiki}
+    \begin{itemize}
+        \item Phabricator
         \begin{itemize}
-        	\item Phabricator
-        	\begin{itemize}
-        		\item Archanist
-                \begin{itemize}
-                    \item Uses git
-                    \item Interfaces with Phabricator
-                    \item Unit tests \& linting
-                \end{itemize}
-        		\item Web interface
-                \begin{itemize}
-                    \item Hub for the entire multi project
-                    \item User story and task management
-                    \item Wiki
-                    \item Code review
-                \end{itemize}
-        	\end{itemize}
+            \item Archanist
+            \begin{itemize}
+                \item Uses git
+                \item Interfaces with Phabricator
+                \item Unit tests \& linting
+            \end{itemize}
+            \item Web interface
+            \begin{itemize}
+                \item Hub for the entire multi project
+                \item User story and task management
+                \item Wiki
+                \item Code review
+            \end{itemize}
         \end{itemize}
-    \end{frame}
-    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{CI, Documentation, Artifact Repo}
+    \end{itemize}
+\end{frame}
+\begin{frame}[t]{Tools for Project Management \& Development}\framesubtitle{CI, Documentation, Artifact Repo}
+    \begin{itemize}
+        \item Jenkins
         \begin{itemize}
-        	\item Jenkins
-        	\begin{itemize}
-        		\item Gradle
-                \begin{itemize}
-                    \item DevOps
-                \end{itemize}
-                \item Automated Testing
-        		\item Artifactory
-                \item Javadoc
-        	\end{itemize}
+            \item Gradle
+            \begin{itemize}
+                \item DevOps
+            \end{itemize}
+            \item Automated Testing
+            \item Artifactory
+            \item Javadoc
         \end{itemize}
-    \end{frame}
+    \end{itemize}
+\end{frame}
 \section{Architecture}
-    \begin{frame}[t]{Architecture}\framesubtitle{Old GIRAF architecture}
-        \only<1>{%
-        \begin{figure}
-        	\includegraphics[width=0.8\textwidth]{images/old_architecture.png}
-        \end{figure}}
-        \only<2>{%
-        \begin{figure}
-        	\includegraphics[width=0.8\textwidth]{images/old_architecture_memes.png}
-        \end{figure}}
-    \end{frame}
+\begin{frame}[t]{Architecture}\framesubtitle{Old GIRAF architecture}
+    \only<1>{%
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/old_architecture.png}
+    \end{figure}}
+    \only<2>{%
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/old_architecture_memes.png}
+    \end{figure}}
+\end{frame}
 
-    \begin{frame}[t]{Architecture}\framesubtitle{New GIRAF architecture}
-    	\begin{figure}
-    		\scalebox{0.6}{%
-        	\input{images/architecture_diagram.tex}}
-        \end{figure}
-    \end{frame}
+\begin{frame}[t]{Architecture}\framesubtitle{New GIRAF architecture}
+    \centering
+    \scalebox{0.6}{%
+    \input{images/architecture_diagram.tex}}
+\end{frame}
+
+\begin{frame}[t]{Architecture}\framesubtitle{New GIRAF architecture}
+    \begin{itemize}
+        \item Layered architecture
+        \item Easier to test
+        \item Scaleable
+        \item Easier to make other GIRAF clients
+    \end{itemize}
+\end{frame}
