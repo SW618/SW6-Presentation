@@ -1,36 +1,35 @@
 \section{Development}
     \subsection{REST API}
         \begin{frame}[t]{Developing the REST API}\framesubtitle{Overview}
-            Will this be needed?
-            Maybe the model--layer?
-            1 person for 4 sprints + ~4 people for 2 sprints:
-            12 man--sprints.
-
-            Focus on the next generation of GIRAF developers. 
+            \begin{itemize}
+                \item Focus on the next generation of GIRAF developers
+                \begin{itemize}
+                    \item Documentation
+                    \item Design
+                \end{itemize}
+                \item Synchronisation
+                \item Security
+            \end{itemize}
         \end{frame}
 
         \begin{frame}[t]{Developing the REST API}\framesubtitle{Our contributions}
             Sprints 3-4:
             \begin{itemize}
                 \item Pictograms
-                \item Sequence
-                \item Week Schedule
+                \item Sequences
+                \item Week Schedules
             \end{itemize}
             \bigskip
-            \uncover<2->{
-            Differences from developing APPs.
+            Differences from developing Apps.
             \begin{itemize}
                 \item Unit Tests (With a code--coverage above 0~\%)
                 \item Linting
-                \uncover<3->{
-                    \begin{itemize}
-                        \item Saved time during code--review
-                        \item Enforced a code--style
-                    \end{itemize}
-                }
+                \begin{itemize}
+                    \item Saved time during code--review
+                    \item Enforced a code--style
+                \end{itemize}
                 \item Strict(er) code--review
             \end{itemize}
-            }
         \end{frame}
 
         \begin{frame}[t]{Demo of the REST API}\framesubtitle{Pictograms and Sequences}
@@ -41,20 +40,28 @@
                     \item being uploaded.
                     \item being viewed.
                 \end{itemize}
-                \uncover<2->{
                 \item Sequences
                 \begin{itemize}
                     \item being created.
                     \item being viewed.
                     \item being edited.
                 \end{itemize}
-                }
             \end{itemize}
         \end{frame}
 
-    \subsection{GIRAF--APPS}
+    \subsection{GIRAF--Apps}
+        \begin{frame}[t]{GIRAF--Apps}
+            Sprints 1-2:
+            \begin{itemize}
+                \item Gradle issues
+                \item PictoSearch library
+                \item Week Schedule
+            \end{itemize}
+        \end{frame}
+
+
         \subsubsection{Gradle}
-            \begin{frame}[t]{GIRAF--APPs}\framesubtitle{The Gradle Build System}
+            \begin{frame}[t]{GIRAF--Apps}\framesubtitle{The Gradle Build System}
                 \begin{itemize}
                     \item Fixing the initial broken library builds.
                     \item Assisting with Jenkins.
@@ -63,10 +70,10 @@
             \end{frame}
 
         \subsubsection{PictoSearch}
-            \begin{frame}[t]{GIRAF--APPs}\framesubtitle{PictoSearch}
+            \begin{frame}[t]{GIRAF--Apps}\framesubtitle{PictoSearch}
                 \begin{itemize}
                     \item Improving the initial view.
-                    \item ``real--time'' search.
+                    \item \enquote{real--time} search.
                 \end{itemize}
                 \bigskip
                 \begin{columns}[c]
@@ -77,8 +84,8 @@
                 \end{columns}
             \end{frame}
 
-        \subsubsection{WeekSchedule}
-            \begin{frame}[t]{GIRAF--APPs}\framesubtitle{WeekSchedule}
+        \subsubsection{Week Schedule}
+            \begin{frame}[t]{GIRAF--Apps}\framesubtitle{Week Schedule}
                 \begin{itemize}
                     \item Added border to each frame.
                     \item Made the entire area scrollable.
