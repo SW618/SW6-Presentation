@@ -1,4 +1,76 @@
-\section{Sass' Slides}
-    \begin{frame}[t]{Sass' Slides}\framesubtitle{Sass' Slides}
-        Test Text
+\section{Project Management \& Development Tools}
+    \subsection{Obstacles in the development process}
+    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{Tasks we need to solve}
+        \begin{itemize}
+        	\item Version Control
+        	\item Code Review
+        	\item Wiki
+        	\item Documentation
+        	\item Continuous Integration
+        	\item Artifact Repository
+        \end{itemize}
+    \end{frame}
+    \subsection{Tools}
+    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{Version Control}
+        \begin{itemize}
+            \item Git
+        	\begin{itemize}
+        		\item Foundation of workflow
+                \item Powerfull
+                \item Easy to make mistakes
+        	\end{itemize}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{Code Review, Wiki}
+        \begin{itemize}
+        	\item Phabricator
+        	\begin{itemize}
+        		\item Archanist
+                \begin{itemize}
+                    \item Uses git
+                    \item Interfaces with Phabricator
+                    \item Unit tests \& linting
+                \end{itemize}
+        		\item Web interface
+                \begin{itemize}
+                    \item Hub for the entire multi project
+                    \item User story and task management
+                    \item Wiki
+                    \item Code review
+                \end{itemize}
+        	\end{itemize}
+        \end{itemize}
+    \end{frame}
+    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{CI, Documentation, Artifact Repo}
+        \begin{itemize}
+        	\item Jenkins
+        	\begin{itemize}
+        		\item Gradle
+                \begin{itemize}
+                    \item DevOps
+                \end{itemize}
+                \item Automated Testing
+        		\item Artifactory
+                \item Javadoc
+        	\end{itemize}
+        \end{itemize}
+    \end{frame}
+\section{Architecture}
+    \begin{frame}[t]{Architecture}\framesubtitle{Old GIRAF architecture}
+        \only<1>{%
+        \begin{figure}
+        	\includegraphics[width=0.8\textwidth]{images/old_architecture.png}
+        \end{figure}}
+        \only<2>{%
+        \begin{figure}
+        	\includegraphics[width=0.8\textwidth]{images/old_architecture_memes.png}
+        \end{figure}}
+    \end{frame}
+
+    \begin{frame}[t]{Architecture}\framesubtitle{New GIRAF architecture}
+    	\begin{figure}
+    		\scalebox{0.6}{%
+        	\input{images/architecture_diagram.tex}}
+        \end{figure}
     \end{frame}
