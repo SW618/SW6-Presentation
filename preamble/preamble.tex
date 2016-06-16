@@ -110,7 +110,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Flowchart
 \usepackage{tikz}
-\usetikzlibrary{shapes.geometric, arrows, positioning, matrix, automata, positioning}
+\usepackage{tkz-graph}
+\usetikzlibrary{shapes,arrows}
+\usepackage{tikz-qtree}
+\usepackage{tikzscale}
+\usetikzlibrary{shapes.multipart, arrows, matrix, automata, positioning, shadows, decorations.pathreplacing, calc}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -161,3 +165,11 @@
 
 \showboxdepth=5
 \showboxbreadth=5
+
+
+\tikzstyle{decision} = [diamond, draw, fill=yellow!20, text width=4.5em, text badly centered, node distance=3cm, inner sep=3pt]
+\tikzstyle{block} = [rectangle, draw, fill=green!40, text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+%\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm, minimum height=2em]
+\tikzstyle{cloud_nospace} = [cloud, node distance=1cm]
+\tikzstyle{preDefProc} = [draw,rectangle split, rectangle split horizontal,rectangle split parts=3, fill=green!40,minimum height=4em]
