@@ -1,6 +1,7 @@
-\section{Tools}
-    \begin{frame}[t]{Tools}\framesubtitle{Tools for the development process}
-        \begin{itemize}<1-2>
+\section{Project Management \& Development Tools}
+    \subsection{Obstacles in the development process}
+    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{Tasks we need to solve}
+        \begin{itemize}
         	\item Version Control
         	\item Code Review
         	\item Wiki
@@ -8,21 +9,47 @@
         	\item Continuous Integration
         	\item Artifact Repository
         \end{itemize}
-
-        \begin{itemize}<2->
+    \end{frame}
+    \subsection{Tools}
+    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{Version Control}
+        \begin{itemize}
             \item Git
         	\begin{itemize}
         		\item Foundation of workflow
+                \item Powerfull
+                \item Easy to make mistakes
         	\end{itemize}
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{Code Review, Wiki}
+        \begin{itemize}
         	\item Phabricator
         	\begin{itemize}
         		\item Archanist
+                \begin{itemize}
+                    \item Uses git
+                    \item Interfaces with Phabricator
+                    \item Unit tests \& linting
+                \end{itemize}
         		\item Web interface
+                \begin{itemize}
+                    \item Hub for the entire multi project
+                    \item User story and task management
+                    \item Wiki
+                    \item Code review
+                \end{itemize}
         	\end{itemize}
+        \end{itemize}
+    \end{frame}
+    \begin{frame}[t]{Project Management \& Development Tools}\framesubtitle{CI, Documentation, Artifact Repo}
+        \begin{itemize}
         	\item Jenkins
         	\begin{itemize}
         		\item Gradle
+                \item Automated Testing
         		\item Artifactory
+                \item Javadoc
         	\end{itemize}
         \end{itemize}
     \end{frame}
