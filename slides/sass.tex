@@ -1,8 +1,11 @@
-\section{Tools for Project Management \& Development}
+\section{Project Management \& Development}
 \subsection{Obstacles}
-\begin{frame}[t]{Tools for Project Management \& Development}
+\begin{frame}{Project Management \& Development}
     \begin{itemize}
         \item Version Control
+        \begin{itemize}
+            \item Manageing repositories and sourcecode
+        \end{itemize}
         \item Code Review
         \item Wiki
         \item Documentation
@@ -11,23 +14,27 @@
     \end{itemize}
 \end{frame}
 \subsection{Tools}
-\begin{frame}[t]{Tools for Project Management \& Development}\framesubtitle{Version Control}
+\begin{frame}[t]{Project Management \& Development}\framesubtitle{Version Control}
     \begin{itemize}
         \item Git
         \begin{itemize}
             \item Foundation of the workflow
             \item Gogs
+            \begin{itemize}
+                \item Restricted to AAU developers
+                \item Custom git--hooks
+            \end{itemize}
             \item Powerful
             \item Easy to make mistakes
         \end{itemize}
     \end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Tools for Project Management \& Development}\framesubtitle{Code Review, Wiki}
+\begin{frame}[t]{Project Management \& Development}\framesubtitle{Code Review, Wiki}
     \begin{itemize}
         \item Phabricator
         \begin{itemize}
-            \item Archanist
+            \item Arcanist
             \begin{itemize}
                 \item Uses git
                 \item Interfaces with Phabricator
@@ -35,15 +42,20 @@
             \end{itemize}
             \item Web interface
             \begin{itemize}
-                \item Hub for the entire multi project
+                \item Hub for the entire multi--project
                 \item User story and task management
+                \begin{itemize}
+                    \item Backlog
+                    \item Assign to groups
+                \end{itemize}
+                \item Scrumboards
                 \item Wiki
                 \item Code review
             \end{itemize}
         \end{itemize}
     \end{itemize}
 \end{frame}
-\begin{frame}[t]{Tools for Project Management \& Development}\framesubtitle{CI, Documentation, Artifact Repo}
+\begin{frame}[t]{Project Management \& Development}\framesubtitle{CI, Documentation, Artifact Repo}
     \begin{itemize}
         \item Jenkins
         \begin{itemize}
@@ -52,7 +64,15 @@
                 \item DevOps
             \end{itemize}
             \item Automated Testing
+            \begin{itemize}
+                \item Monkey test
+                \item Unit tests
+            \end{itemize}
             \item Artifactory
+            \begin{itemize}
+                \item Maven repository
+                \item Multiple versions of libraries
+            \end{itemize}
             \item Javadoc
         \end{itemize}
     \end{itemize}
