@@ -36,92 +36,95 @@
 
 \subsection{Tools}
 \begin{frame}{Project Management \& Development}\framesubtitle{Version Control}
+    \textbf{Git}
     \begin{itemize}
-        \item Git
+        \item Foundation of the workflow
+        \item Gogs
         \begin{itemize}
-            \item Foundation of the workflow
-            \item Gogs
-            \begin{itemize}
-                \item Restricted to AAU developers
-                \item Custom git--hooks
-            \end{itemize}
-            \item Powerful
-            \item Easy to make mistakes
+            \item Restricted to AAU developers
+            \item Custom git--hooks
         \end{itemize}
+        \item Powerful
+        \item Easy to make mistakes
     \end{itemize}
 \end{frame}
 
 \begin{frame}{Project Management \& Development}\framesubtitle{Code Review, Wiki}
+    \textbf{Phabricator}
     \begin{itemize}
-        \item Phabricator
+        \item Arcanist
         \begin{itemize}
-            \item Arcanist
+            \item Uses git
+            \item Interfaces with Phabricator
+            \item Unit tests \& linting
+        \end{itemize}
+        \item Web interface
+        \begin{itemize}
+            \item Hub for the entire multi--project
+            \item Code review
+            \item User story and task management
             \begin{itemize}
-                \item Uses git
-                \item Interfaces with Phabricator
-                \item Unit tests \& linting
+                \item Backlog
+                \item Assigning to groups
             \end{itemize}
-            \item Web interface
-            \begin{itemize}
-                \item Hub for the entire multi--project
-                \item User story and task management
-                \begin{itemize}
-                    \item Backlog
-                    \item Assign to groups
-                \end{itemize}
-                \item Scrumboards
-                \item Wiki
-                \item Code review
-            \end{itemize}
+            \item Scrumboards
+            \item Wiki
         \end{itemize}
     \end{itemize}
 \end{frame}
-\begin{frame}[t]{Project Management \& Development}\framesubtitle{CI, Documentation, Artifact Repo}
+\begin{frame}{Project Management \& Development}\framesubtitle{CI, Documentation, Artifact Repo}
+    \textbf{Jenkins}
     \begin{itemize}
-        \item Jenkins
+        \item Gradle
         \begin{itemize}
-            \item Gradle
-            \begin{itemize}
-                \item DevOps
-            \end{itemize}
-            \item Automated Testing
-            \begin{itemize}
-                \item Monkey test
-                \item Unit tests
-            \end{itemize}
-            \item Artifactory
-            \begin{itemize}
-                \item Maven repository
-                \item Multiple versions of libraries
-            \end{itemize}
-            \item Javadoc \& Enunciate
+            \item Build tool
         \end{itemize}
+        \item Automated Testing
+        \begin{itemize}
+            \item Monkey test
+            \item Unit tests
+        \end{itemize}
+        \item Artifactory
+        \begin{itemize}
+            \item Maven repository
+            \item Multiple versions of libraries
+        \end{itemize}
+        \item Javadoc \& Enunciate
     \end{itemize}
-\end{frame}
-\section{Architecture}
-\begin{frame}[t]{Architecture}\framesubtitle{Old GIRAF architecture}
-    \only<1>{%
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.8\textwidth]{images/old_architecture.png}
-    \end{figure}}
-    \only<2>{%
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.8\textwidth]{images/old_architecture_memes.png}
-    \end{figure}}
 \end{frame}
 
-\begin{frame}{Architecture}\framesubtitle{New GIRAF architecture}
+\section{Architecture}
+\subsection{Old GIRAF}
+\begin{frame}{Architecture}\framesubtitle{Old GIRAF architecture}
     \only<1>{%
     \centering
-    \scalebox{0.6}{%
-    \input{images/architecture_diagram.tex}}}
+    \includegraphics[width=0.8\textwidth]{images/old_architecture.png}}
     \only<2>{%
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/old_architecture_memes.png}}
+    \onslide<2->{%
     \begin{itemize}
-        \item Layered architecture
-        \item Easier to test
-        \item Scaleable
-        \item Easier to make other GIRAF clients
+        \item High coupling
+        \item Low cohesion
     \end{itemize}}
+\end{frame}
+
+\subsection{New GIRAF}
+\begin{frame}{Architecture}\framesubtitle{New GIRAF architecture}
+    \begin{columns}
+        \hspace{-1.75em}%
+        \column{0.55\textwidth}%
+        \centering
+        \scalebox{0.575}{%
+        \input{images/architecture_diagram.tex}}
+        \column<2->{0.45\textwidth}
+        \begin{itemize}
+            \item Loose coupling
+            \item High cohesion
+            \item Layered architecture
+            \item Easier to test
+            \item Scaleable
+            \item Easier to make other GIRAF clients
+        \end{itemize}
+    \end{columns}
 \end{frame}
