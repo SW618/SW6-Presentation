@@ -7,14 +7,35 @@
             \item Manageing repositories and sourcecode
         \end{itemize}
         \item Code Review
+        \begin{itemize}
+            \item Structuring review process
+            \item Easy access to code that needs review
+        \end{itemize}
         \item Wiki
+        \begin{itemize}
+            \item Guides
+            \item General GIRAF information
+        \end{itemize}
         \item Documentation
+        \begin{itemize}
+            \item Javadoc
+            \item REST API service doc.
+        \end{itemize}
         \item Continuous Integration
+        \begin{itemize}
+            \item Automated build
+            \item Test
+            \item Deployment to Google Play
+        \end{itemize}
         \item Artifact Repository
+        \begin{itemize}
+            \item Pre--compiled libraries
+        \end{itemize}
     \end{itemize}
 \end{frame}
+
 \subsection{Tools}
-\begin{frame}[t]{Project Management \& Development}\framesubtitle{Version Control}
+\begin{frame}{Project Management \& Development}\framesubtitle{Version Control}
     \begin{itemize}
         \item Git
         \begin{itemize}
@@ -30,7 +51,7 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}[t]{Project Management \& Development}\framesubtitle{Code Review, Wiki}
+\begin{frame}{Project Management \& Development}\framesubtitle{Code Review, Wiki}
     \begin{itemize}
         \item Phabricator
         \begin{itemize}
@@ -73,7 +94,7 @@
                 \item Maven repository
                 \item Multiple versions of libraries
             \end{itemize}
-            \item Javadoc
+            \item Javadoc \& Enunciate
         \end{itemize}
     \end{itemize}
 \end{frame}
@@ -91,17 +112,16 @@
     \end{figure}}
 \end{frame}
 
-\begin{frame}[t]{Architecture}\framesubtitle{New GIRAF architecture}
+\begin{frame}{Architecture}\framesubtitle{New GIRAF architecture}
+    \only<1>{%
     \centering
     \scalebox{0.6}{%
-    \input{images/architecture_diagram.tex}}
-\end{frame}
-
-\begin{frame}[t]{Architecture}\framesubtitle{New GIRAF architecture}
+    \input{images/architecture_diagram.tex}}}
+    \only<2>{%
     \begin{itemize}
         \item Layered architecture
         \item Easier to test
         \item Scaleable
         \item Easier to make other GIRAF clients
-    \end{itemize}
+    \end{itemize}}
 \end{frame}
