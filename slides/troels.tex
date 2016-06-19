@@ -31,11 +31,47 @@
                 \item Strict(er) code--review
             \end{itemize}
         \end{frame}
+\subsubsection{Pictograms}
+\begin{frame}[t, fragile]{Example of the REST API in use}\framesubtitle{Creating a new pictogram}
+To create a pictogram:\\
+Request: \\
+\texttt{POST /department/\{id\}/pictogram/}
+\begin{lstlisting}[language=json]
+{
+  "title" : "Test",
+  "ownerId" : 1337,
+  "departmentId" : 2,
+  "accessLevel" : "PROTECTED"
+}
+\end{lstlisting}
+Response:
+\begin{lstlisting}[language=json]
+{
+  "type": ".Pictogram",
+  "id": 8,
+  "lastEditAt": "2016-06-19 11:36:09",
+  "title": "Test"
+}
+\end{lstlisting}
+\end{frame}
+\begin{frame}[t, fragile]{Example of the REST API in use}\framesubtitle{Creating a new pictogram cont.}
+Request: \\
+\texttt{PUT /department/\{id\}/pictogram/8/} \\
+With the PNG as data (Content-Type: image/png).
+Response:
+\begin{lstlisting}[language=json]
+{
+  "type": ".Pictogram",
+  "id": 8,
+  "lastEditAt": "2016-06-19 11:36:29",
+  "title": "Test"
+}
+\end{lstlisting}
+Then: \\
+\texttt{GET /department/\{id\}/pictogram/7/image} \\
+will return the pictogram.
+\end{frame}
 
-        \begin{frame}[t]{Example of the REST API in use}\framesubtitle{Pictograms and Sequences}
-            curl -> JSON
-            JSON something something
-        \end{frame}
 
     \subsection{GIRAF--Apps}
         \begin{frame}[t]{GIRAF--Apps}
